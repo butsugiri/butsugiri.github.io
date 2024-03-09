@@ -5,9 +5,10 @@
 layout: home
 ---
 
-[Google Scholarはこちら](https://scholar.google.co.jp/)
+- [Google Scholar](https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ&hl=ja)
+- [GitHub](https://github.com/butsugiri)
 
-ご連絡は shun.kiyono[at]sbintuitions.co.jp まで
+ご連絡は shun.kiyono[at]ｴｽﾋﾞｰｲﾝﾄｩｲｯｼｮﾝｽﾞ.co.jp まで
 
 ## Career
 
