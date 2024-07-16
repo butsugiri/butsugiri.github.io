@@ -1,0 +1,14 @@
+---
+---
+{{reference}}
+    {% if entry.abstract %}
+    <button class="btn btnId btnPub--abstract" id="b_{{key}}-abstract" style="outline:none;">Abstract</button>
+    {% endif %}
+
+    {% if entry.url %}
+    <a href="{{entry.url}}"><button class="btn btnId btnPub--download" style="outline:none; position:relative;white-space: normal;">PDF</button></a>
+    {% endif %}
+    
+    {% if links['sup.pdf'] %}
+    <a href="{{links['sup.pdf']}}"><button class="btn btnId btnPub--supplement" style="outline:none; position:relative;white-space: normal;">Supplement</button></a>
+    {% endif %}

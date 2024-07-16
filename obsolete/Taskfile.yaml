@@ -1,0 +1,11 @@
+version: '3'
+
+tasks:
+  build:
+    cmds:
+      - poetry run python generate.py > publish/index.html
+    silent: true
+  serve:
+    cmds:
+      - python -m http.server -d publish 8000
+    silent: true
