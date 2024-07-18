@@ -8,7 +8,7 @@ layout: home
 - [Google Scholar](https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ&hl=ja)
 - [GitHub](https://github.com/butsugiri)
 
-ご連絡は shun.kiyono[at]ｴｽﾋﾞｰｲﾝﾄｩｲｯｼｮﾝｽﾞ.co.jp まで
+メールアドレス：shun.kiyono [atat] sbintuitions.co.jp
 
 ## Career
 
@@ -84,9 +84,11 @@ layout: home
 
 ### Others
 
+- 第16回最先端NLP勉強会 運営委員
 - 第15回最先端NLP勉強会 運営委員
 - 第10回最先端NLP勉強会 運営委員
 
 ### その他
 
+- [大規模な日本語の事前学習言語モデルSarashina1・2の公開 - SB Intuitions TECH BLOG](https://www.sbintuitions.co.jp/blog/entry/2024/06/26/115641)
 - [36億パラメータの日本語言語モデルを公開しました](https://engineering.linecorp.com/ja/blog/3.6-billion-parameter-japanese-language-model)
