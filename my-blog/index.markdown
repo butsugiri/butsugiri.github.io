@@ -8,12 +8,12 @@ layout: home
 - [Google Scholar](https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ&hl=ja)
 - [GitHub](https://github.com/butsugiri)
 
-ご連絡は shun.kiyono[at]ｴｽﾋﾞｰｲﾝﾄｩｲｯｼｮﾝｽﾞ.co.jp まで
+メールアドレス：shun.kiyono [atat] sbintuitions.co.jp
 
 ## Career
 
 - 2023 Oct-Current	  SB Intuitions株式会社（SB Intuitions）
-- 2023 Oct-Current	  LINEヤフー株式会社（LY Corporation）
+- 2023 Oct-2024 Jun	  LINEヤフー株式会社（LY Corporation）
 - 2022 Aug-2023 Sep 	LINE株式会社（LINE Corporation）
 - 2019 Apr-2022 Jul 	国立研究開発法人理化学研究所 革新知能統合研究センター 自然言語理解チーム（RIKEN Center for Advanced Intelligence Project: Natural Language Understanding Team）
 
@@ -41,7 +41,6 @@ layout: home
 
 {% bibliography --file international_conference %}
 
-
 ### Domestic Conference
 
 {% bibliography --file domestic %}
@@ -49,7 +48,6 @@ layout: home
 ### Others
 
 {% bibliography --file others %}
-
 
 ## Awards
 
@@ -84,9 +82,11 @@ layout: home
 
 ### Others
 
+- 第16回最先端NLP勉強会 運営委員
 - 第15回最先端NLP勉強会 運営委員
 - 第10回最先端NLP勉強会 運営委員
 
 ### その他
 
+- [大規模な日本語の事前学習言語モデルSarashina1・2の公開 - SB Intuitions TECH BLOG](https://www.sbintuitions.co.jp/blog/entry/2024/06/26/115641)
 - [36億パラメータの日本語言語モデルを公開しました](https://engineering.linecorp.com/ja/blog/3.6-billion-parameter-japanese-language-model)
