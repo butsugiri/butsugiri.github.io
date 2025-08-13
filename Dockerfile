@@ -1,5 +1,5 @@
-FROM jekyll/jekyll:4
+FROM ruby:3.3-bullseye
 
 WORKDIR /code
-COPY site/Gemfile .
+COPY my-blog/Gemfile .
 RUN bundle install 

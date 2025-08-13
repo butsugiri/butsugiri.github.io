@@ -29,9 +29,6 @@ github_username:  butsugiri
 
 # Build settings
 theme: no-style-please
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
 
 scholar:
   repository: /repository
