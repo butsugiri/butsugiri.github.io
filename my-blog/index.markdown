@@ -91,6 +91,8 @@ layout: home
 
 ### Blogs
 
+I am a (co-)author of the following articles:
+
 - [Sarashina2.2-Instruct：コンパクトかつ性能の高い日本語Instructモデル - SB Intuitions TECH BLOG](https://www.sbintuitions.co.jp/blog/entry/2025/03/07/093143)
 - [大規模な日本語の事前学習言語モデルSarashina1・2の公開 - SB Intuitions TECH BLOG](https://www.sbintuitions.co.jp/blog/entry/2024/06/26/115641)
 - [36億パラメータの日本語言語モデルを公開しました](https://engineering.linecorp.com/ja/blog/3.6-billion-parameter-japanese-language-model)
