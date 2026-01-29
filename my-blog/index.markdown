@@ -8,11 +8,9 @@ layout: home
 - [Google Scholar](https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ&hl=ja)
 - [GitHub](https://github.com/butsugiri)
 
-メールアドレス：shun.kiyono [atat] sbintuitions.co.jp
-
 ## Career
 
-- 2023 Oct-Current	  SB Intuitions株式会社（SB Intuitions）
+- 2023 Oct-2026 Jan	  SB Intuitions株式会社（SB Intuitions）
 - 2023 Oct-2024 Jun	  LINEヤフー株式会社（LY Corporation）
 - 2022 Aug-2023 Sep 	LINE株式会社（LINE Corporation）
 - 2019 Apr-2022 Jul 	国立研究開発法人理化学研究所 革新知能統合研究センター 自然言語理解チーム（RIKEN Center for Advanced Intelligence Project: Natural Language Understanding Team）
