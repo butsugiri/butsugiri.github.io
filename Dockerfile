@@ -1,5 +1,6 @@
-FROM ruby:3.3-bullseye
+FROM ruby:4.0.1-bookworm
 
 WORKDIR /code
 COPY my-blog/Gemfile .
-RUN bundle install 
+COPY my-blog/Gemfile.lock .
+RUN bundle install
