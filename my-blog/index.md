@@ -1,19 +1,18 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: home
 ---
 
-- [Google Scholar](https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ&hl=ja)
+- [Google Scholar](https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ)
 - [GitHub](https://github.com/butsugiri)
+- [LinkedIn](https://www.linkedin.com/in/shun-kiyono/)
 
 ## Career
 
-- 2023 Oct-2026 Jan	  SB Intuitions株式会社（SB Intuitions）
-- 2023 Oct-2024 Jun	  LINEヤフー株式会社（LY Corporation）
-- 2022 Aug-2023 Sep 	LINE株式会社（LINE Corporation）
-- 2019 Apr-2022 Jul 	国立研究開発法人理化学研究所 革新知能統合研究センター 自然言語理解チーム（RIKEN Center for Advanced Intelligence Project: Natural Language Understanding Team）
+- 2026 Feb-Current: Cohere Inc.
+- 2023 Oct-2026 Jan: SB Intuitions株式会社（SB Intuitions）
+- 2023 Oct-2024 Jun: LINEヤフー株式会社（LY Corporation）
+- 2022 Aug-2023 Sep: LINE株式会社（LINE Corporation）
+- 2019 Apr-2022 Jul: 国立研究開発法人理化学研究所 革新知能統合研究センター 自然言語理解チーム（RIKEN Center for Advanced Intelligence Project: Natural Language Understanding Team）
 
 ## Education
 
@@ -62,7 +61,6 @@ layout: home
 
 ### Reviewer
 
-- and more!!!
 - 自然言語処理 編集委員 (2024-)
 - ACL 2023
 - EMNLP 2022
@@ -70,6 +68,7 @@ layout: home
 - EMNLP 2021
 - IJCAI 2021
 - COLING 2020 (emergency reviewer)
+- and more!!!
 
 ### Invited Talk
 
