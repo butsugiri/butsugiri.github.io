@@ -1,0 +1,9 @@
+- name: Google Scholar
+  url: https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ
+  icon: google-scholar
+- name: GitHub
+  url: https://github.com/butsugiri
+  icon: github
+- name: LinkedIn
+  url: https://www.linkedin.com/in/shun-kiyono/
+  icon: linkedin

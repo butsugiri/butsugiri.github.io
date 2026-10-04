@@ -3,6 +3,13 @@ layout: default
 ---
 <header>
   <h1>{{ site.title }}</h1>
+  <nav class="social-links" aria-label="Social profiles">
+    {% for profile in site.data.social_links %}
+      <a href="{{ profile.url | escape }}" aria-label="{{ profile.name | escape }}" title="{{ profile.name | escape }}">
+        <img src="{{ '/assets/icons/' | append: profile.icon | append: '.svg' | relative_url }}" alt="" width="28" height="28" />
+      </a>
+    {% endfor %}
+  </nav>
   {%-if site.theme_config.show_description-%}
     <p>{{ site.description }}</p>
   {%-endif-%}
