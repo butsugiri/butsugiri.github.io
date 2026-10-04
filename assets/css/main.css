@@ -223,6 +223,13 @@ a:focus-visible, summary:focus-visible {
   font-weight: 600;
 }
 
+.history-phrase {
+  display: inline-block;
+  max-width: 100%;
+  overflow-wrap: normal;
+  line-break: strict;
+}
+
 .history-secondary, .history-advisor {
   color: #606b78;
   font-size: 0.85em;
