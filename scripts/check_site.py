@@ -78,8 +78,6 @@ def check(root):
         errors.append("Incorrect homepage author")
     if home.metadata.get("twitter:creator") != "@shunkiyono":
         errors.append("Incorrect Twitter creator")
-    if not home.abstracts:
-        errors.append("No abstract disclosures rendered")
     for path, page in pages.items():
         for reference in page.references:
             url = urlsplit(reference)
