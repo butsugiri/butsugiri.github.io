@@ -1,13 +1,6 @@
 ---
 ---
 {{ reference }}
-{% assign abstract = entry.abstract | strip %}
-{% if abstract != "" and abstract != nil %}
-<details class="publication-abstract">
-  <summary>Abstract</summary>
-  <p>{{ entry.abstract | escape }}</p>
-</details>
-{% endif %}
 <div class="publication-links">
   {% if entry.url %}
     {% assign url_path = entry.url | split: '?' | first | split: '#' | first | downcase %}

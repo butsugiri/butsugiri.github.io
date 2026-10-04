@@ -8,25 +8,76 @@ My expertise spans synthetic-data generation, semi-supervised learning, and mode
 
 ## Career
 
-- 2026 Feb-Current: Cohere Inc.
-- 2023 Oct-2026 Jan: SB Intuitions株式会社（SB Intuitions）
-- 2023 Oct-2024 Jun: LINEヤフー株式会社（LY Corporation）
-- 2022 Aug-2023 Sep: LINE株式会社（LINE Corporation）
-- 2019 Apr-2022 Jul: 国立研究開発法人理化学研究所 革新知能統合研究センター 自然言語理解チーム（RIKEN Center for Advanced Intelligence Project: Natural Language Understanding Team）
+<ul class="history-list">
+  <li class="history-entry">
+    <div class="history-date">2026 Feb — Current</div>
+    <div class="history-detail">
+      <strong>Cohere Inc.</strong>
+    </div>
+  </li>
+  <li class="history-entry">
+    <div class="history-date">2023 Oct — 2026 Jan</div>
+    <div class="history-detail">
+      <strong>SB Intuitions株式会社</strong>
+      <div class="history-secondary">SB Intuitions</div>
+    </div>
+  </li>
+  <li class="history-entry">
+    <div class="history-date">2023 Oct — 2024 Jun</div>
+    <div class="history-detail">
+      <strong>LINEヤフー株式会社</strong>
+      <div class="history-secondary">LY Corporation</div>
+    </div>
+  </li>
+  <li class="history-entry">
+    <div class="history-date">2022 Aug — 2023 Sep</div>
+    <div class="history-detail">
+      <strong>LINE株式会社</strong>
+      <div class="history-secondary">LINE Corporation</div>
+    </div>
+  </li>
+  <li class="history-entry">
+    <div class="history-date">2019 Apr — 2022 Jul</div>
+    <div class="history-detail">
+      <strong>国立研究開発法人理化学研究所 革新知能統合研究センター</strong>
+      <div>自然言語理解チーム</div>
+      <div class="history-secondary">RIKEN Center for Advanced Intelligence Project: Natural Language Understanding Team</div>
+    </div>
+  </li>
+</ul>
 
 ## Education
 
-- 2020 Oct-2022 Mar 	東北大学大学院 情報科学研究科 システム情報科学専攻 博士後期課程 (社会人博士課程・短期修了)
-  - Graduate School of Information Sciences, Tohoku University
-  - Advisor 乾 健太郎 / Kentaro Inui & 鈴木 潤 / Jun Suzuki
-- 2017 Apr-2019 Mar 	東北大学大学院 情報科学研究科 システム情報科学専攻 博士前期課程 修了
-  - Master of Information Sciences
-  - Graduate School of Information Sciences, Tohoku University
-  - Advisor 乾 健太郎 / Kentaro Inui & 鈴木 潤 / Jun Suzuki
-- 2013 Apr-2017 Mar 	東北大学 工学部 情報知能システム総合学科 卒業
-  - Bachelor of Engineering
-  - Department of Information and Intelligent Systems, Tohoku University
-  - Advisor 乾 健太郎 / Kentaro Inui 
+<ul class="history-list">
+  <li class="history-entry">
+    <div class="history-date">2020 Oct — 2022 Mar</div>
+    <div class="history-detail">
+      <strong>東北大学大学院 · 博士後期課程</strong>
+      <div>情報科学研究科 システム情報科学専攻</div>
+      <div>社会人博士課程・短期修了</div>
+      <div class="history-secondary">Graduate School of Information Sciences, Tohoku University</div>
+      <div class="history-advisor">Advisor: 乾 健太郎 / Kentaro Inui &amp; 鈴木 潤 / Jun Suzuki</div>
+    </div>
+  </li>
+  <li class="history-entry">
+    <div class="history-date">2017 Apr — 2019 Mar</div>
+    <div class="history-detail">
+      <strong>東北大学大学院 · 博士前期課程 修了</strong>
+      <div>情報科学研究科 システム情報科学専攻</div>
+      <div class="history-secondary">Master of Information Sciences<br>Graduate School of Information Sciences, Tohoku University</div>
+      <div class="history-advisor">Advisor: 乾 健太郎 / Kentaro Inui &amp; 鈴木 潤 / Jun Suzuki</div>
+    </div>
+  </li>
+  <li class="history-entry">
+    <div class="history-date">2013 Apr — 2017 Mar</div>
+    <div class="history-detail">
+      <strong>東北大学 · 学士</strong>
+      <div>工学部 情報知能システム総合学科 卒業</div>
+      <div class="history-secondary">Bachelor of Engineering<br>Department of Information and Intelligent Systems, Tohoku University</div>
+      <div class="history-advisor">Advisor: 乾 健太郎 / Kentaro Inui</div>
+    </div>
+  </li>
+</ul>
 
 ## Publications
 
@@ -72,14 +123,20 @@ My expertise spans synthetic-data generation, semi-supervised learning, and mode
 
 ### Invited Talk
 
-- 第63回 名古屋地区NLPセミナー: より良いTransformerをつくる [slide](https://speakerdeck.com/butsugiri/yoriliang-itransformerwotukuru)
-- 第6回特許情報シンポジウム: 機械翻訳コンペティション参加報告 [slide](https://speakerdeck.com/butsugiri/ji-jie-fan-yi-konpeteisiyoncan-jia-bao-gao)
+- 第63回 名古屋地区NLPセミナー: より良いTransformerをつくる
+
+  <div class="publication-links"><a href="https://speakerdeck.com/butsugiri/yoriliang-itransformerwotukuru">Slides</a></div>
+- 第6回特許情報シンポジウム: 機械翻訳コンペティション参加報告
+
+  <div class="publication-links"><a href="https://speakerdeck.com/butsugiri/ji-jie-fan-yi-konpeteisiyoncan-jia-bao-gao">Slides</a></div>
 
 ### Tutorial
 
-- 乾研究室内部のセミナー: 試行回数の増やし方 [slide](https://speakerdeck.com/butsugiri/increasing-number-of-attempts-ver-2021)
+- 乾研究室内部のセミナー: 試行回数の増やし方
 
-### Others
+  <div class="publication-links"><a href="https://speakerdeck.com/butsugiri/increasing-number-of-attempts-ver-2021">Slides</a></div>
+
+### Organizing
 
 - 第17回最先端NLP勉強会 運営委員
 - 第16回最先端NLP勉強会 運営委員

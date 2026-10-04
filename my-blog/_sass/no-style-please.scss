@@ -146,12 +146,6 @@ img {
   }
 }
 
-.publication-abstract {
-  margin-top: 0.4rem;
-
-  summary { cursor: pointer; }
-}
-
 a:focus-visible, summary:focus-visible {
   outline: 2px solid currentColor;
   outline-offset: 3px;
@@ -177,5 +171,44 @@ a:focus-visible, summary:focus-visible {
   img {
     margin: 0;
     filter: none;
+  }
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.history-entry {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 1.5rem;
+  margin: 0 0 1.75rem;
+}
+
+.history-date {
+  color: #606b78;
+  font-size: 0.85em;
+  font-variant-numeric: tabular-nums;
+  padding-top: 0.15rem;
+}
+
+.history-detail {
+  strong { font-weight: 600; }
+}
+
+.history-secondary, .history-advisor {
+  color: #606b78;
+  font-size: 0.85em;
+  margin-top: 0.25rem;
+}
+
+.history-advisor { margin-top: 0.5rem; }
+
+@media (max-width: 600px) {
+  .history-entry {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.25rem;
   }
 }
