@@ -1,5 +1,6 @@
 services:
   service_jekyll:
+    image: local/jekyll:latest
     build:
       dockerfile: Dockerfile
       context: .
