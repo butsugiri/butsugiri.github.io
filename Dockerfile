@@ -1,4 +1,4 @@
-FROM ruby:4.0.1-bookworm
+FROM ruby:4.0.7-bookworm
 
 WORKDIR /code
 COPY my-blog/Gemfile .
