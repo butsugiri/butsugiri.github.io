@@ -92,3 +92,27 @@ img {
   display: block;
   margin: 0 auto;
 }
+
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.4rem;
+
+  a {
+    border: 1px solid currentColor;
+    border-radius: 0.2rem;
+    padding: 0.15rem 0.5rem;
+  }
+}
+
+.publication-abstract {
+  margin-top: 0.4rem;
+
+  summary { cursor: pointer; }
+}
+
+a:focus-visible, summary:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}

@@ -1,0 +1,6 @@
+- field: slide
+  label: Slides
+- field: poster
+  label: Poster
+- field: spotlight
+  label: Spotlight
