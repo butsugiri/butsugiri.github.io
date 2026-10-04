@@ -1,8 +1,10 @@
-# 旧サイトのアーカイブ
+# Legacy site archive
 
-以前の Python 製サイトのソース・生成 HTML・画像・PDF を保存しています。
-現在の Jekyll サイトのビルド・公開には使用しません。
+This directory preserves the source, generated HTML, images, and PDFs from the
+previous Python-based site. It is excluded from the current Jekyll build and deployment.
 
-過去の内容を参照するため保持しており、現在のプロフィールへの更新は行いません。
-現行の論文一覧に必要な PDF は `../my-blog/repository/` にも保存しています。
-新しい内容はリポジトリルートの README に従って `my-blog/` 内を編集してください。
+The archive is retained for historical reference and is not updated to reflect the
+current profile. PDFs used by the active publication list are also stored in
+`../my-blog/repository/`.
+
+For new content, follow the repository root README and edit files under `my-blog/`.
