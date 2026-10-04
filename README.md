@@ -1,50 +1,51 @@
 # butsugiri.github.io
 
-Shun Kiyono のプロフィール・論文一覧を公開する Jekyll サイトです。
-公開 URL: https://butsugiri.github.io
+A Jekyll site for Shun Kiyono's profile and publications.
+Published at https://butsugiri.github.io.
 
-## 開発
+## Development
 
-Docker を起動してから、リポジトリのルートで実行します。
-ホストに Ruby をインストールする必要はありません。
+Start Docker, then run these commands from the repository root.
+You do not need to install Ruby on the host.
 
 ```sh
 docker compose build
 docker compose up
 ```
 
-http://localhost:4000 を開きます。LiveReload はポート 35729 を使います。
-設定ファイルを変更した場合はサーバーを再起動してください。
+Open http://localhost:4000. LiveReload uses port 35729.
+Restart the server after changing the configuration file.
 
-## ビルド確認
+## Build validation
 
 ```sh
 docker compose run --rm -e JEKYLL_ENV=production service_jekyll bundle exec jekyll build --trace
 python3 scripts/check_site.py
 ```
 
-生成物は `my-blog/_site/` に出力され、Git の管理対象には含めません。
-CI でもすべてのブランチ向けの PR と main への push 時に Docker ビルドと生成 HTML を検証します。
-HTML 検査は要旨本文・メタ情報・ローカル資料・ページ内リンクを確認します（Python 3 標準ライブラリのみ）。
-main では検証成功後に既存の方式で gh-pages ブランチへ公開します。
-GitHub Pages の公開元は gh-pages ブランチのルートを使用します。
+Generated files are written to `my-blog/_site/` and are excluded from Git.
+CI validates the Docker build and generated HTML for pull requests targeting any branch
+and for pushes to main. The HTML checker verifies abstract content, metadata, local
+resources, and fragment targets using only the Python 3 standard library.
+After validation succeeds on main, the existing deployment workflow publishes to
+the gh-pages branch. GitHub Pages uses the root of that branch as its publishing source.
 
-## 更新するファイル
+## Content updates
 
-- `my-blog/index.md`: 経歴・学歴・活動
-- `my-blog/_bibliography/*.bib`: 論文情報
-- `my-blog/repository/`: 論文・スライド・ポスター PDF
-- `my-blog/_data/menu.yml`: ページ内ナビゲーション
-- `my-blog/_config.yml`: 公開 URL・著者・SEO・テーマ設定
+- `my-blog/index.md`: career, education, and activities
+- `my-blog/_bibliography/*.bib`: publication metadata
+- `my-blog/repository/`: paper, slide, and poster PDFs
+- `my-blog/_data/menu.yml`: homepage section navigation
+- `my-blog/_config.yml`: production URL, author, SEO, and theme settings
 
-論文の `url` は末尾が `.pdf` の場合に「PDF」、それ以外は「Paper」と表示します。
-`slide`・`poster`・`spotlight` は別リンクとして表示します。
-ローカルの資料には `/repository/ファイル名.pdf` を指定します。
-要旨は `abstract` に設定すると開閉できます。
+A publication's `url` is labeled PDF when its path ends in `.pdf`, and Paper otherwise.
+The `slide`, `poster`, and `spotlight` fields appear as separate resource links.
+Use `/repository/filename.pdf` for local resources.
+Set `abstract` to display the abstract in an expandable disclosure.
 
-## gem・Ruby の更新
+## Updating gems and Ruby
 
-`Gemfile.lock` は必ず Linux コンテナ内で更新します。
+Always update `Gemfile.lock` inside the Linux container.
 
 ```sh
 docker compose run --rm service_jekyll bundle update
@@ -52,11 +53,12 @@ docker compose build
 docker compose run --rm -e JEKYLL_ENV=production service_jekyll bundle exec jekyll build --trace
 ```
 
-Ruby を更新する際は Dockerfile と CI の `ruby_ver` を合わせ、同じ更新手順を実行します。
-詳しいルールは [AGENTS.md](AGENTS.md) を参照してください。
+When updating Ruby, keep Dockerfile and the CI `ruby_ver` setting in sync, then follow
+the same update procedure. See [AGENTS.md](AGENTS.md) for the project rules.
 
-## 旧サイト
+## Legacy site
 
-`obsolete/` は以前の Python 製サイトの保存用です。現在のビルド・公開には使用しません。
-旧資料は履歴保持のため残し、現在の論文一覧で参照する PDF は `my-blog/repository/` にも保存します。
-Docker のビルドコンテキストには Gemfile とロックファイルだけを含めます。
+`obsolete/` preserves the previous Python-based site and is excluded from the current
+build and deployment. Keep the archived materials for historical reference; PDFs
+linked from the current publication list are also stored in `my-blog/repository/`.
+The Docker build context includes only Dockerfile, Gemfile, and the lockfile.
