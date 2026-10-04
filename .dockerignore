@@ -1,0 +1,5 @@
+**
+!Dockerfile
+!my-blog/
+!my-blog/Gemfile
+!my-blog/Gemfile.lock
