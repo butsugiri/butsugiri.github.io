@@ -28,7 +28,9 @@ class Page(HTMLParser):
             if attrs.get(attr):
                 self.references.append(attrs[attr])
         if tag == "meta":
-            self.metadata[attrs.get("name", attrs.get("property"))] = attrs.get("content")
+            for attr in ("name", "property"):
+                if attrs.get(attr):
+                    self.metadata[attrs[attr]] = attrs.get("content")
         if tag == "link" and attrs.get("rel") == "canonical":
             self.metadata["canonical"] = attrs.get("href")
         if tag in ("a", "button"):

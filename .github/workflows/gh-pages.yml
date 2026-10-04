@@ -19,13 +19,33 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
       - name: Build Docker image
-        run: docker compose build
+        uses: docker/build-push-action@v7
+        with:
+          context: .
+          file: Dockerfile
+          platforms: linux/amd64
+          load: true
+          tags: local/jekyll:latest
+          cache-from: type=gha,scope=jekyll
+          cache-to: type=gha,mode=max,scope=jekyll
       - name: Build Jekyll site
-        run: docker compose run --rm -e JEKYLL_ENV=production service_jekyll bundle exec jekyll build --trace
+        run: docker compose run --rm --pull never -e JEKYLL_ENV=production service_jekyll bundle exec jekyll build --trace
 
       - name: Check generated HTML
         run: python3 scripts/check_site.py
+
+      - name: Upload validated site
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: jekyll-site
+          path: my-blog/_site/
+          include-hidden-files: true
+          if-no-files-found: error
+          retention-days: 1
 
   build_and_deploy:
     needs: build
@@ -34,32 +54,14 @@ jobs:
       contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      # Use GitHub Actions' cache to cache dependencies on servers
-      - uses: actions/cache@v4
+      - name: Download validated site
+        uses: actions/download-artifact@v4
         with:
-          path: vendor/bundle
-          key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-gems-
-
-      # Use GitHub Deploy Action to build and deploy to Github
-      # For latest version: `jeffreytse/jekyll-deploy-action@master`
-      - uses: jeffreytse/jekyll-deploy-action@v0.7.0
+          name: jekyll-site
+          path: public
+      - name: Deploy validated site
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          provider: 'github'         # Default is github
-          token: ${{ secrets.GITHUB_TOKEN }} # Repository token
-          ssh_private_key: ''        # It's your SSH private key (SSH approach)
-          repository: ''             # Default is current repository
-          branch: 'gh-pages'         # Default is gh-pages for github provider
-          jekyll_src: './my-blog'           # Default is root directory
-          jekyll_cfg: '_config.yml'  # Default is _config.yml
-          jekyll_baseurl: ''         # Default is according to _config.yml
-          ruby_ver: '4.0.1'          # Match the Ruby version used in Dockerfile
-          bundler_ver: ''            # Read from Gemfile.lock (BUNDLED WITH)
-          cname: ''                  # Default is to not use a cname
-          actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
-
-
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: public

@@ -27,8 +27,10 @@ Generated files are written to `my-blog/_site/` and are excluded from Git.
 CI validates the Docker build and generated HTML for pull requests targeting any branch
 and for pushes to main. The HTML checker verifies abstract content, metadata, local
 resources, and fragment targets using only the Python 3 standard library.
-After validation succeeds on main, the existing deployment workflow publishes to
-the gh-pages branch. GitHub Pages uses the root of that branch as its publishing source.
+CI caches Docker layers, including installed gems, between runs. After validation
+succeeds on main, the generated site is passed to the deployment job as an artifact
+and published to the gh-pages branch without rebuilding. GitHub Pages uses the root
+of that branch as its publishing source.
 
 ## Content updates
 
@@ -53,8 +55,8 @@ docker compose build
 docker compose run --rm -e JEKYLL_ENV=production service_jekyll bundle exec jekyll build --trace
 ```
 
-When updating Ruby, keep Dockerfile and the CI `ruby_ver` setting in sync, then follow
-the same update procedure. See [AGENTS.md](AGENTS.md) for the project rules.
+When updating Ruby, change Dockerfile, then follow the same update procedure.
+CI uses the same Dockerfile. See [AGENTS.md](AGENTS.md) for the project rules.
 
 ## Legacy site
 
