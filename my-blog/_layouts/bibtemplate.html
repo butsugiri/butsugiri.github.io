@@ -1,14 +1,26 @@
 ---
 ---
-{{reference}}
-    {% if entry.abstract %}
-    <button class="btn btnId btnPub--abstract" id="b_{{key}}-abstract" style="outline:none;">Abstract</button>
+{{ reference }}
+{% assign abstract = entry.abstract | strip %}
+{% if abstract != "" and abstract != nil %}
+<details class="publication-abstract">
+  <summary>Abstract</summary>
+  <p>{{ entry.abstract | escape }}</p>
+</details>
+{% endif %}
+<div class="publication-links">
+  {% if entry.url %}
+    {% assign url_path = entry.url | split: '?' | first | split: '#' | first | downcase %}
+    {% assign url_extension = url_path | slice: -4, 4 %}
+    <a href="{{ entry.url | escape }}">{% if url_extension == '.pdf' %}PDF{% else %}Paper{% endif %}</a>
+  {% endif %}
+  {% for resource in site.data.publication_resources %}
+    {% assign resource_url = entry[resource.field] %}
+    {% if resource_url and resource_url != "" %}
+      <a href="{{ resource_url | relative_url | escape }}">{{ resource.label }}</a>
     {% endif %}
-
-    {% if entry.url %}
-    <a href="{{entry.url}}"><button class="btn btnId btnPub--download" style="outline:none; position:relative;white-space: normal;">PDF</button></a>
-    {% endif %}
-    
-    {% if links['sup.pdf'] %}
-    <a href="{{links['sup.pdf']}}"><button class="btn btnId btnPub--supplement" style="outline:none; position:relative;white-space: normal;">Supplement</button></a>
-    {% endif %}
+  {% endfor %}
+  {% if links['sup.pdf'] %}
+    <a href="{{ links['sup.pdf'] | relative_url | escape }}">Supplement</a>
+  {% endif %}
+</div>
