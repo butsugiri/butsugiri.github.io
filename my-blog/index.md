@@ -2,6 +2,10 @@
 layout: home
 ---
 
+I research and build language models at Cohere, with a focus on efficient training, Transformer architectures, and language data.
+
+My expertise spans synthetic-data generation and model pre-training ([EMNLP 2019](https://aclanthology.org/D19-1119/)), as well as Transformer architecture improvements ([EMNLP 2021](https://aclanthology.org/2021.emnlp-main.266/)). I have also contributed to building Japanese LLMs, including the [Sarashina model family](https://www.sbintuitions.co.jp/blog/entry/2024/06/26/115641).
+
 - [Google Scholar](https://scholar.google.co.jp/citations?user=LS3EdOoAAAAJ)
 - [GitHub](https://github.com/butsugiri)
 - [LinkedIn](https://www.linkedin.com/in/shun-kiyono/)
