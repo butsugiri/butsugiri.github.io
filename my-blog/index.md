@@ -18,30 +18,30 @@ My expertise spans synthetic-data generation, semi-supervised learning, and mode
   <li class="history-entry">
     <div class="history-date">2023 Oct — 2026 Jan</div>
     <div class="history-detail">
-      <strong>SB Intuitions株式会社</strong>
-      <div class="history-secondary">SB Intuitions</div>
+      <strong>SB Intuitions</strong>
+      <div class="history-secondary">SB Intuitions株式会社</div>
     </div>
   </li>
   <li class="history-entry">
     <div class="history-date">2023 Oct — 2024 Jun</div>
     <div class="history-detail">
-      <strong>LINEヤフー株式会社</strong>
-      <div class="history-secondary">LY Corporation</div>
+      <strong>LY Corporation</strong>
+      <div class="history-secondary">LINEヤフー株式会社</div>
     </div>
   </li>
   <li class="history-entry">
     <div class="history-date">2022 Aug — 2023 Sep</div>
     <div class="history-detail">
-      <strong>LINE株式会社</strong>
-      <div class="history-secondary">LINE Corporation</div>
+      <strong>LINE Corporation</strong>
+      <div class="history-secondary">LINE株式会社</div>
     </div>
   </li>
   <li class="history-entry">
     <div class="history-date">2019 Apr — 2022 Jul</div>
     <div class="history-detail">
-      <strong><span class="history-phrase">国立研究開発法人</span><span class="history-phrase">理化学研究所</span> <span class="history-phrase">革新知能統合研究センター</span></strong>
-      <div>自然言語理解チーム</div>
-      <div class="history-secondary">RIKEN Center for Advanced Intelligence Project: Natural Language Understanding Team</div>
+      <strong>RIKEN Center for Advanced Intelligence Project</strong>
+      <div>Natural Language Understanding Team</div>
+      <div class="history-secondary"><span class="history-phrase">国立研究開発法人</span><span class="history-phrase">理化学研究所</span> <span class="history-phrase">革新知能統合研究センター</span><br>自然言語理解チーム</div>
     </div>
   </li>
 </ul>
@@ -52,29 +52,28 @@ My expertise spans synthetic-data generation, semi-supervised learning, and mode
   <li class="history-entry">
     <div class="history-date">2020 Oct — 2022 Mar</div>
     <div class="history-detail">
-      <strong>東北大学大学院 · 博士後期課程</strong>
-      <div>情報科学研究科 システム情報科学専攻</div>
-      <div>社会人博士課程・短期修了</div>
-      <div class="history-secondary">Graduate School of Information Sciences, Tohoku University</div>
-      <div class="history-advisor">Advisor: 乾 健太郎 / Kentaro Inui &amp; 鈴木 潤 / Jun Suzuki</div>
+      <strong>Tohoku University · Doctoral Program</strong>
+      <div>Graduate School of Information Sciences</div>
+      <div class="history-secondary">東北大学大学院 · 博士後期課程<br>情報科学研究科 システム情報科学専攻<br>社会人博士課程・短期修了</div>
+      <div class="history-advisor">Advisor: Kentaro Inui / 乾 健太郎 &amp; Jun Suzuki / 鈴木 潤</div>
     </div>
   </li>
   <li class="history-entry">
     <div class="history-date">2017 Apr — 2019 Mar</div>
     <div class="history-detail">
-      <strong>東北大学大学院 · 博士前期課程 修了</strong>
-      <div>情報科学研究科 システム情報科学専攻</div>
-      <div class="history-secondary">Master of Information Sciences<br>Graduate School of Information Sciences, Tohoku University</div>
-      <div class="history-advisor">Advisor: 乾 健太郎 / Kentaro Inui &amp; 鈴木 潤 / Jun Suzuki</div>
+      <strong>Tohoku University · Master of Information Sciences</strong>
+      <div>Graduate School of Information Sciences</div>
+      <div class="history-secondary">東北大学大学院 · 博士前期課程 修了<br>情報科学研究科 システム情報科学専攻</div>
+      <div class="history-advisor">Advisor: Kentaro Inui / 乾 健太郎 &amp; Jun Suzuki / 鈴木 潤</div>
     </div>
   </li>
   <li class="history-entry">
     <div class="history-date">2013 Apr — 2017 Mar</div>
     <div class="history-detail">
-      <strong>東北大学 · 学士</strong>
-      <div>工学部 情報知能システム総合学科 卒業</div>
-      <div class="history-secondary">Bachelor of Engineering<br>Department of Information and Intelligent Systems, Tohoku University</div>
-      <div class="history-advisor">Advisor: 乾 健太郎 / Kentaro Inui</div>
+      <strong>Tohoku University · Bachelor of Engineering</strong>
+      <div>Department of Information and Intelligent Systems</div>
+      <div class="history-secondary">東北大学 · 学士<br>工学部 情報知能システム総合学科 卒業</div>
+      <div class="history-advisor">Advisor: Kentaro Inui / 乾 健太郎</div>
     </div>
   </li>
 </ul>
