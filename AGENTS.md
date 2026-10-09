@@ -24,12 +24,12 @@ Docker コンテナ内で開発・ビルドを行う。ホスト環境に Ruby �
 
 ## Docker 構成
 
-- ベースイメージ: `ruby:4.0.7-bookworm`（`linux/amd64` で固定）
+- ベースイメージ: `ruby:4.0`（`linux/amd64` で固定）
 - `./my-blog` が `/code` としてマウントされる
 - Dockerfile では `Gemfile` と `Gemfile.lock` の両方をコピーしてから `bundle install` する
 
 ```dockerfile
-FROM ruby:4.0.7-bookworm
+FROM ruby:4.0
 
 WORKDIR /code
 COPY my-blog/Gemfile .
